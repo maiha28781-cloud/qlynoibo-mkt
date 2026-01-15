@@ -14,18 +14,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-slate-950 text-slate-100">
-        <header className="border-b border-slate-800">
+      <body className="min-h-screen bg-background text-foreground">
+        <header className="border-b border-border">
           <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 py-4">
             <span className="text-lg font-semibold tracking-wide">
               Qlynoibo
             </span>
             <nav className="flex gap-6 text-sm font-medium">
-              <Link className="transition hover:text-slate-200" href="/">
+              <Link className="transition hover:text-white" href="/">
                 Home
               </Link>
-              <Link className="transition hover:text-slate-200" href="/about">
+              <Link className="transition hover:text-white" href="/about">
                 About
+              </Link>
+              <Link className="transition hover:text-white" href="/login">
+                Login
               </Link>
             </nav>
           </div>
